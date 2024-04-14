@@ -1,8 +1,6 @@
-//import { UsersApiPath } from "../../common/enums/api/urers-api-path.enum.js"
 const UsersApiPath = require("../../common/enums/api/urers-api-path.enum.js");
 const joi = require('joi');
 var jwt = require("jsonwebtoken");
-//const {db} = require('../../../index.js');
 const initUsers = (Router, db,statEmitter) => {
     const router = Router()
     router.get(UsersApiPath.$ID, (req, res) => {
